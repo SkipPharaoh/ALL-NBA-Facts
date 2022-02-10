@@ -41,7 +41,7 @@ On the homepage, I will be able to see links for players, teams, games, season a
 
 
 ### Component Hierarchy
-![](./Assets/Components.jpeg)
+![](./Assets/Components.png)
 
 ### Low-Fidelity Wireframes
 ![](./Assets/Wireframe.png)
