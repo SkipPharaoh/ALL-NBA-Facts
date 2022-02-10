@@ -28,13 +28,13 @@ This project must meet 6 requirements:
 As a user, I will arrive at the NBA-Center's homepage. On said homepage, I will see a header with a search area & the page clickable title. The title, when clicked, will always take you back to the homepage. 
 
 On the homepage, I will be able to see links for players, teams, games, season averages, & stats. When they click on one of those links, It will render all the information related to that link in a component on the page. For example, if I click players, I will be able to see all the players in the NBA.
-## MVP Goals
+### MVP Goals
 1) Have each component render on the webpage.
 2) Properly fetch the information from the API on the webpage
 3) Deployed properly on the web
 4) Have it styled to a minimum
 
-## Stretch Goals
+### Stretch Goals
 1) Have a Search function on the Navbar
 2) Have a login feature for users to select favorite teams and/or players
 3) Incorporate mobile-responsive UI styling
