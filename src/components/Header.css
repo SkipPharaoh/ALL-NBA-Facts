@@ -1,0 +1,9 @@
+.Logo {
+    height: 100px;
+    width: 50px;
+}
+.Header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

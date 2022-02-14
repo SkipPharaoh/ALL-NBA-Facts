@@ -1,0 +1,17 @@
+.PlayerContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: space-evenly;
+    
+}
+.PreButton{
+    margin-right: 3em;
+}
+.NextButton{
+    margin-left: 3em;
+}
+.PageCount {
+    cursor: default;
+}

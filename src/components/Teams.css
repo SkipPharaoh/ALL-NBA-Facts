@@ -1,0 +1,7 @@
+.TeamsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: space-evenly;
+}

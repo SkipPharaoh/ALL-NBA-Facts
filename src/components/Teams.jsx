@@ -1,5 +1,7 @@
             // IMPORTS //
 import {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
+import './Teams.css'
 
 function Teams(){
     // States //
@@ -23,9 +25,24 @@ function Teams(){
         getTeams()
     },[])
 
+    const TeamResults = teams.map((team, idx)=>{
+        return (
+            <div key={idx}>
+                <section>
+                    <Link to={`/teams/${team.id}`} >
+                        <h3>{team.full_name}</h3>
+                    </Link>
+                </section>
+            </div>
+        )
+    })
+
     return(
         <div>
-            <h1>Teams Component Rendering</h1>
+            <h1>All NBA Teams</h1>
+            <section  className='TeamsContainer'>
+                {TeamResults}
+            </section>
         </div>
     )
 }

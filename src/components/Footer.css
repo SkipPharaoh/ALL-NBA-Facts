@@ -1,0 +1,9 @@
+.FooterLogo {
+    height: 100px;
+    width: 50px;
+}
+.Footer {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
