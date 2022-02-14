@@ -1,6 +1,8 @@
             // IMPORTS //
 import {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import { Card, Button } from 'react-bootstrap'
 
 
 function TeamsDetail(){
@@ -34,9 +36,19 @@ function TeamsDetail(){
              Team Loading...
             </h1>
             : <div>
-                <h3>{team.full_name}</h3>
-                <h4>{team.conference}ern Conference</h4>
-                <h5>{team.division} Division</h5>
+                <Card style={{ width: '18rem' }}>
+                    <Card.Header>{team.full_name} Information</Card.Header>
+                    <Card.Img variant="top" src={require(`./NBA_Team_Logo/${team.name}.png`)} />
+                    <Card.Body>
+                        <Card.Title>{team.conference}ern Conference</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">{team.division} Division</Card.Subtitle>
+                        <Card.Text></Card.Text>
+                        <Link to={`/teams/`} >
+                            {/* <h3>{team.full_name}</h3> */}
+                            <Button variant="primary">NBA Teams</Button>
+                        </Link>
+                    </Card.Body>
+                </Card>
             </div>
             }
         </div>

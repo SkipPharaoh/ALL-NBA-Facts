@@ -8,7 +8,7 @@ function Results(props){
 
     return (
         <div className="Results">
-            {!search || !results ? <h3>Player Loading...</h3> : 
+            {!search || !results ? <h4>Player Loading...</h4> : 
             <div>
                 <h3>{results[0].first_name} {results[0].last_name}</h3>
                 <h4>Team: {results[0].team.abbreviation}</h4>

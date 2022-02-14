@@ -1,7 +1,7 @@
             // IMPORTS //
 import './Header.css'
 import { Link } from 'react-router-dom'
-import {Navbar, Nav, NavDropdown, Button} from 'react-bootstrap'
+import {Navbar, Button} from 'react-bootstrap'
 
 
 function Header(){
@@ -22,7 +22,7 @@ function Header(){
             <Link to='/players'>Players</Link>
             <Link to='/teams'>Teams</Link>
             <Link to='/search'>
-                <Button>Search</Button>
+                <Button>Search For Player</Button>
             </Link>
         </Navbar>
     )
