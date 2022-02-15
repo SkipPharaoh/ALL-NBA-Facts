@@ -1,4 +1,5 @@
             // IMPORTS //
+import {Button, Card}  from 'react-bootstrap'
 
 
 function Results(props){
@@ -9,10 +10,17 @@ function Results(props){
     return (
         <div className="Results">
             {!search || !results ? <h4>Player Loading...</h4> : 
-            <div>
-                <h3>{results[0].first_name} {results[0].last_name}</h3>
-                <h4>Team: {results[0].team.abbreviation}</h4>
-                <h4>Position: {results[0].position}</h4>
+            <div className='PlayerResults'>
+                <Card style={{ width: '18rem' }}>
+                <Card.Header>Player Information</Card.Header>
+                    <Card.Body>
+                        <Card.Title>{results[0].first_name} {results[0].last_name}</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Position: {results[0].position}</Card.Subtitle>
+                        <Card.Text>
+                            Team: {results[0].team.full_name}
+                        </Card.Text>
+                    </Card.Body>
+                </Card> 
             </div>
             }
         </div>

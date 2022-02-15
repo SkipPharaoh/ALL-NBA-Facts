@@ -42,7 +42,7 @@ function TeamsDetail(){
                     <Card.Body>
                         <Card.Title>{team.conference}ern Conference</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">{team.division} Division</Card.Subtitle>
-                        <Card.Text></Card.Text>
+                        <Card.Text>Located in the city of {team.city} with the team's abbreviation as {team.abbreviation}</Card.Text>
                         <Link to={`/teams/`} >
                             {/* <h3>{team.full_name}</h3> */}
                             <Button variant="primary">NBA Teams</Button>

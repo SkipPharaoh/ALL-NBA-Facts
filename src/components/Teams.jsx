@@ -31,9 +31,9 @@ function Teams(){
             <div key={idx}>
                 <section>
                     <Card style={{ width: '18rem' }}>
+                    <Card.Header>{team.full_name}</Card.Header>
                         <Card.Img variant="top" src={require(`./NBA_Team_Logo/${team.name}.png`)} />
                         <Card.Body>
-                            <Card.Title>{team.full_name}</Card.Title>
                             <Link to={`/teams/${team.id}`} >
                                 {/* <h3>{team.full_name}</h3> */}
                                 <Button variant="primary">See More Info</Button>
@@ -57,11 +57,3 @@ function Teams(){
 }
 
 export default Teams
-
-{/* <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src=`https://kinexon.com/uploads/images/Sports/_400x400_crop_center-center_82_line/${team.city}_${team.name}_Logo_Website.png` />
-  <Card.Body>
-    <Card.Title>{team.full_name}</Card.Title>
-    <Button variant="primary">See More Info</Button>
-  </Card.Body>
-</Card> */}

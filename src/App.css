@@ -8,3 +8,10 @@ main{
 .Routes {
   margin-bottom: 120px;
 }
+.Results {
+  padding-top: 30px;
+}
+.PlayerResults {
+  display: flex;
+  justify-content: center;
+}

@@ -1,7 +1,7 @@
             // IMPORTS //
 import {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import {Button}  from 'react-bootstrap'
+import {Button, Card}  from 'react-bootstrap'
 import ReactPaginate from 'react-paginate'
 import './Players.css'
 
@@ -55,7 +55,15 @@ function Players(){
     const PlayerResults = players.map((player, idx)=>{
         return (
             <div key={idx}>
-                <h3>{player.first_name} {player.last_name}</h3>
+                <Card style={{ width: '18rem' }}>
+                    <Card.Body>
+                        <Card.Title>{player.first_name} {player.last_name}</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Position: {player.position}</Card.Subtitle>
+                        <Card.Text>
+                            Team: {player.team.full_name}
+                        </Card.Text>
+                    </Card.Body>
+                </Card> 
             </div>
         )
     })
@@ -65,10 +73,12 @@ function Players(){
     return (
         <div>
             <h1>NBA Players</h1>
-            <Button className='PreButton' onClick={PreviousPage} >Previous Page</Button>
-            <button className='PageCount'>Current Page: {page}</button>
-            <button className='PageCount'>Total Pages: 76</button>
-            <Button className='NextButton' onClick={NextPage} >Next Page</Button>
+            <div className="Topbuttons">
+                <Button className='PreButton' onClick={PreviousPage} >Previous Page</Button>
+                <button className='PageCount'>Current Page: {page}</button>
+                <button className='PageCount'>Total Pages: 76</button>
+                <Button className='NextButton' onClick={NextPage} >Next Page</Button>
+            </div>
             <div className='PlayersResults'>
                 <main >
                     <section className='PlayerContainer'>
@@ -76,10 +86,12 @@ function Players(){
                     </section>
                 </main>
             </div>
-            <Button className='PreButton' onClick={PreviousPage} >Previous Page</Button>
-            <button className='PageCount'>Current Page: {page}</button>
-            <button className='PageCount'>Total Pages: 76</button>
-            <Button className='NextButton' onClick={NextPage} >Next Page</Button>
+            <div className="Bottombuttons">
+                <Button className='PreButton' onClick={PreviousPage} >Previous Page</Button>
+                <button className='PageCount'>Current Page: {page}</button>
+                <button className='PageCount'>Total Pages: 76</button>
+                <Button className='NextButton' onClick={NextPage} >Next Page</Button>
+            </div>
         </div>
     )
 }
