@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import {Link} from 'react-router-dom'
 import { Card, Button } from 'react-bootstrap'
+import './TeamsDetail.css'
 
 
 function TeamsDetail(){
@@ -35,7 +36,7 @@ function TeamsDetail(){
             <h1>
              Team Loading...
             </h1>
-            : <div>
+            : <div className='TeamDetail'>
                 <Card style={{ width: '18rem' }}>
                     <Card.Header>{team.full_name} Information</Card.Header>
                     <Card.Img variant="top" src={require(`./NBA_Team_Logo/${team.name}.png`)} />
