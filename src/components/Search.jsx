@@ -9,13 +9,13 @@ function Search(props){
 
 
     // No Refresh On Submit //
-    const HandleSubmit = (e) =>{
+    const handleSubmit = (e) =>{
         getPlayer(search)
         e.preventDefault()
     }
 
     // Search Input Keeps Value As Typing //
-    const HandleSearchChange = (evt) => {
+    const handleSearchChange = (evt) => {
         console.log(evt.target.value)
         setSearch(evt.target.value)
         getPlayer(evt.target.value)
@@ -26,14 +26,14 @@ function Search(props){
             {/* <h2>Search Here</h2> */}
             <form
                 className='Search'
-                onSubmit={HandleSubmit}
+                onSubmit={handleSubmit}
                 >
                 <input
                     type="search"
                     id="search"
                     placeholder='Search for player...'
                     value={search}
-                    onChange={HandleSearchChange}
+                    onChange={handleSearchChange}
                 />
             </form>
         </div>

@@ -6,7 +6,7 @@ function TeamLogos(props){
     const {team} = props
 
     // VARIABLES //
-    let ShowLogos = false
+    let showLogos = false
 
     // PUT IMAGES IN AN ARRAY //
     function importAll(r) {
@@ -138,42 +138,25 @@ function TeamLogos(props){
     // <img src={SixersLogos['doggy.png']} />
 
     // FUNCTION TO SHOW OR HIDE PROPER ALT TEAM LOGOS //
-    const ToggleShow = () => {
-        if (ShowLogos === true) {
-            ShowLogos = false
+    const toggleShow = () => {
+        if (showLogos === true) {
+            showLogos = false
         } else {
-            ShowLogos = true
+            showLogos = true
         }
-        console.log(ShowLogos)
+        console.log(showLogos)
     }
-    console.log(ShowLogos)
+    console.log(showLogos)
 
-    // FUNCTION TO RENDER IMAGES ON PAGE //
-    // const ShowAltLogos = () => {
-        // determine if ShowLogos is true || have ToggleShow call this function
-        // depending on the team, show their logos
-        // have 2 options for return to show 
-            // return blank h1 tag || AltTeamLogos
-    //     !ShowLogos ?
-    //     <h1></h1> :
-    //     <div>Alt Team Logos Here?</div>
-    // }
 
     const name = `${team.abbreviation}Logos`
     console.log(name)
 
-    // for (let i = 1; i < name.length; i++){
-    //     console.log(team.name_[i]) 
-    // }
-    // const ShowTeamLogos = () => {}
-
-    // ShowTeamLogos()
-
     return (
         <div>
-            <Button onClick={ToggleShow}>Hide/Show Previous Team Logos</Button>
+            <Button onClick={toggleShow}>Hide/Show Previous Team Logos</Button>
             <div className='AltLogos'>
-            {/* <img src={BullsLogos['Bulls_Wordmark.png']} /> */}
+            {/* <img src={CHILogos['Bulls_0.png']} /> */}
             </div>
         </div>
     )
