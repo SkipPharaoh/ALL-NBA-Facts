@@ -6,7 +6,7 @@ A place to find all you need about the NBA are there players! You can find all:
 4) Season AVGs
 5) Statistics
 
-This is a React app. The app can be found [here]()
+This is a React app. The app can be found [here](https://nba-center.herokuapp.com/)
 
 ### Technologies Used
 React, CSS, & Heroku
