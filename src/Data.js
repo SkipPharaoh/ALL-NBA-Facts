@@ -43,13 +43,13 @@ const AltTeamLogo = [
         'Bulls_0.png'
     ],
     [
-        'Caveliers_0.png',
-        'Caveliers_1.png',
-        'Caveliers_2.png',
-        'Caveliers_3.png',
-        'Caveliers_4.png',
-        'Caveliers_5.png',
-        'Caveliers_6.png',
+        'Cavaliers_0.png',
+        'Cavaliers_1.png',
+        'Cavaliers_2.png',
+        'Cavaliers_3.png',
+        'Cavaliers_4.png',
+        'Cavaliers_5.png',
+        'Cavaliers_6.png',
     ],
     [
         'Mavericks_0.png',

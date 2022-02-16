@@ -20,8 +20,6 @@ function TeamLogos(props){
         for (let i=0; i < AltTeamLogo[team.id].length; i++){
             arrLogo.push(AltTeamLogo[team.id][i])
             console.log(AltTeamLogo[team.id][i]);
-            // <img src={`./Alt_Logos/${team.name}/${AltTeamLogo}[${team.id}][${i}]`} />
-            // return AltTeamLogo[team.id][i]
         }
         setNameLogo(arrLogo)
     }
@@ -31,18 +29,9 @@ function TeamLogos(props){
 
     // FUNCTION TO SHOW OR HIDE PROPER ALT TEAM LOGOS //
     const toggleShow = () => {
-        // if (showLogos === true) {
-        //     setShowLogos false
-        // } else {
-        //     showLogos = true
-        // }
         setShowLogos(!showLogos)
         console.log(showLogos)
     }
-
-    // const name = showAltLogo()
-    // console.log(nameLogo)
-    // console.log(AltTeamLogo[team.id][0])
 
     // RENDERING PAST LOGOS ON PAGE //
     const AltLogo = showLogos && nameLogo.map((logo, idx)=>{
