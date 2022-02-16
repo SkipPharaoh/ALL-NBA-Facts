@@ -3,3 +3,21 @@
     max-width: 900px;
     padding-bottom: 150px;
 }
+.TopDetail{
+    display: flex;
+    justify-content: center;
+}
+.AltLogos {
+    padding-top: 60px;
+    max-width: 900px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Toggle {
+    padding-top: 30px;
+}
+h4 {
+    padding-bottom: 30px;
+}

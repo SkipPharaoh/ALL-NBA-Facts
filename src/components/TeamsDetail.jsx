@@ -19,7 +19,6 @@ function TeamsDetail(){
             const URL = `https://www.balldontlie.io/api/v1/teams/${id}`
             const res = await fetch(URL)
             const foundTeam = await res.json()
-            // console.log(foundTeam)
             setTeam(foundTeam)
         }catch(err){
             console.log(err)
@@ -38,8 +37,11 @@ function TeamsDetail(){
             <h1>
              Team Loading...
             </h1>
-            : <div className='TeamDetail'>
-                <Card style={{ width: '18rem' }}>
+            : <div className='TeamDetails'>
+                <Card 
+                className='TopDetail' 
+                style={{ width: '18rem' }}
+                >
                     <Card.Header>{team.full_name} Information</Card.Header>
                     <Card.Img variant="top" src={require(`./NBA_Team_Logo/${team.name}.png`)} />
                     <Card.Body>
@@ -52,7 +54,9 @@ function TeamsDetail(){
                         </Link>
                     </Card.Body>
                 </Card>
-                <TeamLogos team={team}/>
+                <div className='TeamDetail'>
+                    <TeamLogos team={team}/>
+                </div>
             </div>
             }
         </div>

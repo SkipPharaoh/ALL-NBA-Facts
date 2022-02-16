@@ -9,9 +9,18 @@ A place to find all you need about the NBA are there players! You can find all:
 This is a React app. The app can be found [here](https://nba-center.herokuapp.com/)
 
 ### Technologies Used
-React, CSS, & Heroku
+React, React-Bootstrap, NBA API & Heroku
+
 ##### API
 You can find the API [here!](https://www.balldontlie.io/)
+### Getting Started/Installation Instructions
+If you want to install this repo:
+ 1) be sure to Fork this repo first. Forking it allows you to have a duplicate repo in your main github account. 
+ 2) On your Forked repo, hit the Code button (big green button) & copy the HTTPS link.
+ 3) Once you have the linked copied, go to your terminal and run "git clone (your copied link)" & this creates a copy of this repo's files to your local machine. 
+ 4) Afterwards, open the folder with the files in you preferred IDE
+### Contribution Guidelines
+
 
 ## NBA-Center Overview
 ### Project Description

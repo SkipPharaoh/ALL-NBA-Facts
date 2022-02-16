@@ -1,5 +1,5 @@
             // IMPORTS //
-import {Button, Card}  from 'react-bootstrap'
+import {Card}  from 'react-bootstrap'
 
 
 function Results(props){

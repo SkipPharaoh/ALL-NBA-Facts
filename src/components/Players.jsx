@@ -1,8 +1,6 @@
             // IMPORTS //
 import {useState, useEffect} from 'react'
-import { Link } from 'react-router-dom'
 import {Button, Card}  from 'react-bootstrap'
-import ReactPaginate from 'react-paginate'
 import './Players.css'
 
 
@@ -25,10 +23,8 @@ function Players(){
             setPage(1)
         }else if(page > 1) {
             setPage(page - 1)
-            // setPage(searchPage)
             console.log(page)
         }
-        // return page
     }
 
     // ASYNC FETCH //
@@ -46,10 +42,8 @@ function Players(){
     // USE EFFECT //
     useEffect(()=>{
         getPlayers()
-        // setPage(page + 1)
         console.log(page)
     },[page])
-    // console.log(players)
     
     
     const PlayerResults = players.map((player, idx)=>{

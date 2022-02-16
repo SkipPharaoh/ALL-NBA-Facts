@@ -23,7 +23,6 @@ function Search(props){
 
     return(
         <div className="Search">
-            {/* <h2>Search Here</h2> */}
             <form
                 className='Search'
                 onSubmit={handleSubmit}
