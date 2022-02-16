@@ -14,7 +14,7 @@ function Teams(){
             const URL = "https://www.balldontlie.io/api/v1/teams"
             const res = await fetch(URL)
             const foundTeams = await res.json()
-            // console.log(foundTeams.data)
+            console.log(foundTeams.data)
             setTeams(foundTeams.data)
         }catch(err){
             console.log(err)
