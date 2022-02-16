@@ -23,7 +23,6 @@ function Players(){
             setPage(1)
         }else if(page > 1) {
             setPage(page - 1)
-            console.log(page)
         }
     }
 
@@ -42,7 +41,6 @@ function Players(){
     // USE EFFECT //
     useEffect(()=>{
         getPlayers()
-        console.log(page)
     },[page])
     
     

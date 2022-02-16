@@ -38,22 +38,23 @@ function TeamsDetail(){
              Team Loading...
             </h1>
             : <div className='TeamDetails'>
-                <Card 
-                className='TopDetail' 
-                style={{ width: '18rem' }}
-                >
-                    <Card.Header>{team.full_name} Information</Card.Header>
-                    <Card.Img variant="top" src={require(`./NBA_Team_Logo/${team.name}.png`)} />
-                    <Card.Body>
-                        <Card.Title>{team.conference}ern Conference</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">{team.division} Division</Card.Subtitle>
-                        <Card.Text>Located in the city of {team.city} with the team's abbreviation as {team.abbreviation}</Card.Text>
-                        <Link to={`/teams/`} >
-                            {/* <h3>{team.full_name}</h3> */}
-                            <Button variant="primary">NBA Teams</Button>
-                        </Link>
-                    </Card.Body>
-                </Card>
+                <div className='TopDetail'>
+                    <Card 
+                    style={{ width: '18rem' }}
+                    >
+                        <Card.Header>{team.full_name} Information</Card.Header>
+                        <Card.Img variant="top" src={require(`./NBA_Team_Logo/${team.name}.png`)} />
+                        <Card.Body>
+                            <Card.Title>{team.conference}ern Conference</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">{team.division} Division</Card.Subtitle>
+                            <Card.Text>Located in the city of {team.city} with the team's abbreviation as {team.abbreviation}</Card.Text>
+                            <Link to={`/teams/`} >
+                                {/* <h3>{team.full_name}</h3> */}
+                                <Button variant="primary">NBA Teams</Button>
+                            </Link>
+                        </Card.Body>
+                    </Card>
+                </div>
                 <div className='TeamDetail'>
                     <TeamLogos team={team}/>
                 </div>

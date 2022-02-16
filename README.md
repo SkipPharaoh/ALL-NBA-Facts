@@ -15,12 +15,12 @@ React, React-Bootstrap, NBA API & Heroku
 You can find the API [here!](https://www.balldontlie.io/)
 ### Getting Started/Installation Instructions
 If you want to install this repo:
- 1) be sure to Fork this repo first. Forking it allows you to have a duplicate repo in your main github account. 
+ 1) Be sure to Fork this repo first. Forking it allows you to have a duplicate repo in your main github account. 
  2) On your Forked repo, hit the Code button (big green button) & copy the HTTPS link.
  3) Once you have the linked copied, go to your terminal and run "git clone (your copied link)" & this creates a copy of this repo's files to your local machine. 
  4) Afterwards, open the folder with the files in you preferred IDE
 ### Contribution Guidelines
-
+If you want to contribute to this application, be sure to work on it from you forked repo & add your desired features. Once you've added your features, go to your repo on your GitHub, then submit a pull request.
 
 ## NBA-Center Overview
 ### Project Description
