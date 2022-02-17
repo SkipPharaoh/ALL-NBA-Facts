@@ -1,3 +1,5 @@
+![GitHub language count](https://img.shields.io/github/languages/count/SkipPharaoh/NBA-Center?color=ff0000&style=plastic)
+![GitHub forks](https://img.shields.io/github/forks/SkipPharaoh/NBA-Center?logoColor=ff0000&style=social)
 # NBA-Center
 A place to find all you need about the NBA are there players! You can find all:
 1) Players
