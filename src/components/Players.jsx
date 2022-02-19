@@ -41,7 +41,8 @@ function Players(){
     // USE EFFECT //
     useEffect(()=>{
         getPlayers()
-    },[page])
+    },[page]) // eslint-disable-line react-hooks/exhaustive-deps
+
     
     
     const PlayerResults = players.map((player, idx)=>{

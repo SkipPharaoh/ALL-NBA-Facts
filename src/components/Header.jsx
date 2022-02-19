@@ -16,7 +16,7 @@ function Header(){
             >
             <Navbar.Brand>
                 <Link to='/'>
-                <img className='Logo' src="https://cutewallpaper.org/21/nba-logo-picture/Who-should-replace-Jerry-West-on-a-new-NBA-logo-The-.png" />
+                <img className='Logo' alt='' src="https://cutewallpaper.org/21/nba-logo-picture/Who-should-replace-Jerry-West-on-a-new-NBA-logo-The-.png" />
                 </Link>
             </Navbar.Brand>
             <Link to='/players'>Players</Link>

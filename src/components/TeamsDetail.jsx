@@ -28,7 +28,8 @@ function TeamsDetail(){
     // USE EFFECT //
     useEffect(()=>{
         getTeam()
-    },[])
+    },[]) // eslint-disable-line react-hooks/exhaustive-deps
+
 
 
     return(

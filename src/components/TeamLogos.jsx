@@ -25,7 +25,8 @@ function TeamLogos(props){
     }
     useEffect(()=>{
         showAltLogo()
-    },[])
+    },[]) // eslint-disable-line react-hooks/exhaustive-deps
+
 
     // FUNCTION TO SHOW OR HIDE PROPER ALT TEAM LOGOS //
     const toggleShow = () => {
