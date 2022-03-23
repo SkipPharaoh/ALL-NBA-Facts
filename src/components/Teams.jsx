@@ -26,7 +26,7 @@ function Teams(){
         getTeams()
     },[])
 
-    const TeamResults = teams.map((team, idx)=>{
+    const TeamResults = !teams ? (<h1>Loading team...</h1>) : teams.map((team, idx)=>{
         return (
             <div key={idx}>
                 <section>
@@ -35,7 +35,6 @@ function Teams(){
                         <Card.Img variant="top" src={require(`./NBA_Team_Logo/${team.name}.png`)} />
                         <Card.Body>
                             <Link to={`/teams/${team.id}`} >
-                                {/* <h3>{team.full_name}</h3> */}
                                 <Button variant="primary">See More Info</Button>
                             </Link>
                         </Card.Body>
